@@ -18,6 +18,7 @@ const Navitems = () => {
       <UlStyle>
         <NavItem link="/">Home</NavItem>
         <NavItem link="/orders">Orders</NavItem>
+        <NavItem link="/Login">Login</NavItem>
       </UlStyle>
     </NavStyle>
   );
