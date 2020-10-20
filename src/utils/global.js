@@ -21,6 +21,7 @@ html{
   --color-textColor: ${(props) => props.theme.colors.textColor};
   --color-whiteColor: ${(props) => props.theme.colors.whiteColor};
   --color-shadow: ${(props) => props.theme.colors.shadow};
+  --color-errorRed: ${(props) => props.theme.colors.errorRed};
 
   @media ${(props) => props.theme.mediaQueries.small}{
     font-size: 60%;

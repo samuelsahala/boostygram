@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Logo from "../Logo/Logo";
-import Container from "../../hoc/layout/elements/Container";
+import {Container} from "../../hoc/layout/elements";
 import Navitems from "./Navitems/Navitems";
 
 const Wrapper = styled.div`
