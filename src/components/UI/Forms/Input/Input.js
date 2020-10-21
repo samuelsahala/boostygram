@@ -17,12 +17,15 @@ const StyledInput = styled.input`
   width: 100%;
   background-color: var(--color-whiteColor);
   color: var(--color-textColor);
-  border: 1px solid var(--color-mainLight);
+  border: 1px solid var(--color-shadow);
   font-size: 1.2rem;
   border-radius: 2rem;
 
   &::placeholder {
     color: var(--color-shadow);
+  }
+  :hover {
+    border: 1px solid var(--color-mainLight);
   }
 `;
 
