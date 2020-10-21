@@ -15,6 +15,8 @@ export const FormWrapper = styled.div`
   border-radius: 1rem;
   padding: 8rem 4rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   align-items: center;
   box-shadow: 0rem 0.5rem 3.5rem var(--shadow);
@@ -22,6 +24,8 @@ export const FormWrapper = styled.div`
 
 export const StyledForm = styled(Form)`
   display: flex;
+  position: relative;
+  align-items: center;
   width: 100%;
   flex-direction: column;
 `;
