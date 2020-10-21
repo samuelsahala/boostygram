@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
+import { connect } from "react-redux";
 
 const MainWrapper = styled.div`
   width: 100%;
@@ -11,11 +12,14 @@ const MainWrapper = styled.div`
   justify-content: center; */
 `;
 
-const Layout = ({ children }) => (
+const Layout = ({ children, loggedIn }) => (
   <>
-    <Navbar />
+    <Navbar loggedIn={loggedIn} />
     <MainWrapper>{children}</MainWrapper>
   </>
 );
+const mapStateToProps = ({ firebase }) => ({
+  loggedIn: firebase.auth,
+});
 
-export default Layout;
+export default connect(mapStateToProps)(Layout);

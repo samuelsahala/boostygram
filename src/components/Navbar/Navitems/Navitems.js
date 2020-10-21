@@ -12,17 +12,27 @@ const UlStyle = styled.ul`
   height: 100%;
 `;
 
-const Navitems = () => {
-  return (
-    <NavStyle>
+const Navitems = ({ loggedIn }) => {
+  let links;
+  if (loggedIn.uid) {
+    links = (
+      <UlStyle>
+        <NavItem link="/">Home</NavItem>
+        <NavItem link="/orders">Orders</NavItem>
+        <NavItem link="/logout">Logout</NavItem>
+      </UlStyle>
+    );
+  } else {
+    links = (
       <UlStyle>
         <NavItem link="/">Home</NavItem>
         <NavItem link="/orders">Orders</NavItem>
         <NavItem link="/Login">Login</NavItem>
         <NavItem link="/Signup">Signup</NavItem>
       </UlStyle>
-    </NavStyle>
-  );
+    );
+  }
+  return <NavStyle>{links}</NavStyle>;
 };
 
 export default Navitems;

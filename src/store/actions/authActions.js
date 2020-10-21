@@ -25,3 +25,12 @@ export const signUp = (data) => async (
   }
   dispatch({ type: actions.AUTH_END });
 };
+
+export const signOut = () => async (dispatch, getState, { getFirebase }) => {
+  const firebase = getFirebase();
+  try {
+    firebase.auth().signOut();
+  } catch (err) {
+    console.log(err.message);
+  }
+};
