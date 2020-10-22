@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Formik, Field } from "formik";
 import * as Yup from "yup";
@@ -33,7 +33,13 @@ const SignupSchema = Yup.object().shape({
     .required("You need to cconfirm your password..."),
 });
 
-const Signup = ({ signUp, loading, error }) => {
+const Signup = ({ signUp, loading, error, cleanUp }) => {
+  useEffect(() => {
+    return () => {
+      cleanUp();
+    };
+  }, [cleanUp]);
+
   return (
     <Formik
       initialValues={{
@@ -108,6 +114,7 @@ const mapStateToProps = ({ auth }) => ({
 
 const mapDispatchToProps = {
   signUp: actions.signUp,
+  cleanUp: actions.clean,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Signup);

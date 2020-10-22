@@ -26,7 +26,6 @@ const Navitems = ({ loggedIn }) => {
     links = (
       <UlStyle>
         <NavItem link="/">Home</NavItem>
-        <NavItem link="/orders">Orders</NavItem>
         <NavItem link="/Login">Login</NavItem>
         <NavItem link="/Signup">Signup</NavItem>
       </UlStyle>
