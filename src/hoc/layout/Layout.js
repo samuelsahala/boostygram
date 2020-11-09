@@ -1,25 +1,22 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import styled from "styled-components";
+import Footer from "../../components/Footer/Footer";
 import { connect } from "react-redux";
+import { Layout } from "antd";
+import { Row, Col } from "antd";
+const { Header, Content } = Layout;
 
-const MainWrapper = styled.div`
-  width: 100%;
-  min-height: calc(100vh-6rem);
-  margin-top: 6rem; // same as our navbar
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-`;
-
-const Layout = ({ children, loggedIn }) => (
-  <>
-    <Navbar loggedIn={loggedIn} />
-    <MainWrapper>{children}</MainWrapper>
-  </>
+const LayoutUI = ({ children, loggedIn }) => (
+  <Layout>
+    <Header>
+      <Navbar loggedIn={loggedIn} />
+    </Header>
+    <Content style={{ height: "90vh" }}>{children}</Content>
+    <Footer />
+  </Layout>
 );
 const mapStateToProps = ({ firebase }) => ({
   loggedIn: firebase.auth,
 });
 
-export default connect(mapStateToProps)(Layout);
+export default connect(mapStateToProps)(LayoutUI);

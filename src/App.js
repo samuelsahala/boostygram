@@ -14,10 +14,9 @@ const App = ({ loggedIn }) => {
   if (loggedIn) {
     routes = (
       <Switch>
-        <Route exact path="/" component={Home} />
         <Route exact path="/orders" component={Orders} />
         <Route exact path="/logout" component={Logout} />
-        <Redirect to="/" />
+        <Redirect to="/orders" />
       </Switch>
     );
   } else {

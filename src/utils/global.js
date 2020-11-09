@@ -32,7 +32,7 @@ html{
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Futura', sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }

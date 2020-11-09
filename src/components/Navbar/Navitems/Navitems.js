@@ -9,7 +9,7 @@ const NavStyle = styled.nav`
 const UlStyle = styled.ul`
   display: flex;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
 `;
 
 const Navitems = ({ loggedIn }) => {

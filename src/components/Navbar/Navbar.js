@@ -12,7 +12,6 @@ const Wrapper = styled.div`
   padding: 0rem 2rem;
   left: 0;
   width: 100%;
-  height: 6rem;
 `;
 
 const FlexWrapper = styled.div`

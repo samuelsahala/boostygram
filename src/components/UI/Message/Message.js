@@ -9,6 +9,7 @@ const StyledP = styled.p`
     if (success) return "green";
     else return "var(--color-main)";
   }};
+  margin: 0;
   opacity: ${({ show }) => (show ? "1" : "0")};
   transform: translateY(${({ show }) => (show ? "40px" : "0px")});
   transition: all 0.2s;

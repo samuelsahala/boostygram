@@ -5,7 +5,7 @@ const baseStyle = css`
   color: ${({ color }) =>
     color === "whiteColor"
       ? "var(--color-whiteColor)"
-      : "var(--color-mainLighter)"};
+      : "var(--color-textColor)"};
   font-weight: 700;
   margin-top: 0;
   margin-bottom: ${({ noMargin }) => (noMargin ? "0rem" : "2rem")};
