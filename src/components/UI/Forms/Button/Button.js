@@ -8,7 +8,7 @@ const StyledButton = styled.button`
   border-radius: 2rem;
   font-size: 1.2rem;
   color: var(--color-whiteColor);
-  background-color: var(--color-main);
+  background-color: var(--color-yellow);
   font-weight: 700;
   box-shadow: 0rem 0.5rem 3.5rem var(--shadow);
   border: none;

@@ -18,6 +18,8 @@ html{
   --color-mainDark: ${(props) => props.theme.colors.mainDark};
   --color-mainLight: ${(props) => props.theme.colors.mainLight};
   --color-mainLighter: ${(props) => props.theme.colors.mainLighter};
+  --color-secondColor: ${(props) => props.theme.colors.secondColor};
+  --color-yellow: ${(props) => props.theme.colors.yellow};
   --color-textColor: ${(props) => props.theme.colors.textColor};
   --color-whiteColor: ${(props) => props.theme.colors.whiteColor};
   --color-shadow: ${(props) => props.theme.colors.shadow};
