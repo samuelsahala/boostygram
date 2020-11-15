@@ -2,18 +2,18 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { connect } from "react-redux";
-import { Layout } from "antd";
-import { Row, Col } from "antd";
-const { Header, Content } = Layout;
+import styled from "styled-components";
+
+const MainWrapper = styled.div`
+  display: flex;
+`;
 
 const LayoutUI = ({ children, loggedIn }) => (
-  <Layout>
-    <Header>
-      <Navbar loggedIn={loggedIn} />
-    </Header>
-    <Content style={{ height: "90vh" }}>{children}</Content>
+  <>
+    <Navbar loggedIn={loggedIn} />
+    <MainWrapper>{children}</MainWrapper>
     <Footer />
-  </Layout>
+  </>
 );
 const mapStateToProps = ({ firebase }) => ({
   loggedIn: firebase.auth,

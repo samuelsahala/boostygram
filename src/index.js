@@ -5,7 +5,6 @@ import { ThemeProvider } from "styled-components";
 import { Provider } from "react-redux";
 import store from "./store";
 import App from "./App";
-import "antd/dist/antd.css";
 
 import styled from "styled-components";
 import theme from "./utils/theme";

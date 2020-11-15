@@ -10,7 +10,7 @@ const NavLinkStyle = styled(NavLink)`
   display: flex;
   text-transform: uppercase;
   align-items: center;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   font-size: 1.2rem;
   padding: 1rem;
   margin: 0 1rem;
