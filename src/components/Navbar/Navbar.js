@@ -7,7 +7,7 @@ import Navitems from "./Navitems/Navitems";
 
 const Wrapper = styled.div`
   position: fixed;
-  background-color: var(--color-mainDark);
+  background-color: black;
   top: 0;
   padding: 0rem 2rem;
   left: 0;

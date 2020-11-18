@@ -5,16 +5,19 @@ import Heading from "../../components/UI/Headings/Heading";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
 const UploadSVGWrapper = styled.div`
-  height: 150px;
-  width: 300px;
+  height: 40rem;
+  width: 50rem;
+  margin: auto;
+  right: 100px;
+  z-index: -100;
   background-image: url(${UploadSVG});
   background-repeat: no-repeat, repeat;
 `;
 
 const Hero = () => {
   return (
-    <Row middle="xs" around="xs">
-      <Col xs={6}>
+    <Row middle="xs">
+      <Col>
         <Heading size="h1" noMargin>
           Boostygram
         </Heading>
@@ -24,12 +27,8 @@ const Hero = () => {
           Views and Likes in a click of a button.
         </Heading>
       </Col>
-      <Col xs={6}>
-        <Row center="xs" middle="xs">
-          <Col xs={6}>
-            <UploadSVGWrapper />
-          </Col>
-        </Row>
+      <Col xs>
+        <UploadSVGWrapper />
       </Col>
     </Row>
   );

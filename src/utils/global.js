@@ -7,6 +7,7 @@ export default createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing:inherit;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,6 +15,7 @@ export default createGlobalStyle`
 html{
   font-size: 62.5%;
   box-sizing: border-box;
+  height:100%;
   --color-main: ${(props) => props.theme.colors.main};
   --color-mainDark: ${(props) => props.theme.colors.mainDark};
   --color-mainLight: ${(props) => props.theme.colors.mainLight};
@@ -34,9 +36,11 @@ html{
 }
 
 body {
+  height:100%;
+  width:100%;
   font-family: 'Futura', sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.6;  
 }
 
 a,input,textarea,button {
@@ -45,5 +49,12 @@ a,input,textarea,button {
   text-decoration: none;
 
 }
+
+.row{
+  width:100%;
+  margin:0;
+  padding:8px;
+}
+
 
 `;

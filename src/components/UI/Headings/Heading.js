@@ -8,7 +8,7 @@ const baseStyle = css`
       : "var(--color-textColor)"};
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: ${({ noMargin }) => (noMargin ? "0rem" : "2rem")};
+  margin-bottom: ${({ noMargin }) => (noMargin ? "0rem" : "1rem")};
 `;
 
 const HeadingOne = styled.h1`
@@ -24,24 +24,24 @@ const HeadingThree = styled.h1`
   ${baseStyle}
 `;
 
-function Heading({ children, color, noMargin, size }) {
+function Heading({ children, color, noMargin, size, className }) {
   if (size === "h1")
     return (
-      <HeadingOne noMargin={noMargin} color={color}>
+      <HeadingOne noMargin={noMargin} color={color} className={className}>
         {children}
       </HeadingOne>
     );
 
   if (size === "h2")
     return (
-      <HeadingTwo noMargin={noMargin} color={color}>
+      <HeadingTwo noMargin={noMargin} color={color} className={className}>
         {children}
       </HeadingTwo>
     );
 
   if (size === "h3")
     return (
-      <HeadingThree noMargin={noMargin} color={color}>
+      <HeadingThree noMargin={noMargin} color={color} className={className}>
         {children}
       </HeadingThree>
     );
