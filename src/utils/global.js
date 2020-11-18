@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import "semantic-ui-css/semantic.min.css";
 export default createGlobalStyle`
 *,
 *::before,
@@ -13,7 +13,7 @@ export default createGlobalStyle`
 }
 
 html{
-  font-size: 62.5%;
+  font-size: 72.5%;
   box-sizing: border-box;
   height:100%;
   --color-main: ${(props) => props.theme.colors.main};

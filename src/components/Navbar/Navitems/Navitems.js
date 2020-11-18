@@ -17,7 +17,6 @@ const Navitems = ({ loggedIn }) => {
   if (loggedIn.uid) {
     links = (
       <UlStyle>
-        <NavItem link="/">New Order</NavItem>
         <NavItem link="/orders">Orders</NavItem>
         <NavItem link="/logout">Logout</NavItem>
       </UlStyle>
