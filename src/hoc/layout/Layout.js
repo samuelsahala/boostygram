@@ -7,10 +7,11 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 
 const MainWrapper = styled.div`
   width: 100%;
-  padding: 6rem;
   min-height: calc(100vh-6rem);
   margin-top: 6rem;
   margin-bottom: 15rem;
+  padding-top: 100px;
+  padding-bottom: 60px;
 `;
 
 const LayoutUI = ({ children, loggedIn }) => (

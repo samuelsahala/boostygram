@@ -30,8 +30,11 @@ const Footer = () => {
           <Row>
             <Heading size="h3" color="whiteColor">
               All user information is kept 100% private and will NOT be shared
-              with anyone. Always remember, you are protected with our - Most
-              trusted instagram service.
+              with anyone.
+            </Heading>
+            <Heading size="h3" color="whiteColor">
+              Always remember, you are protected with our - Most trusted
+              instagram service.
             </Heading>
           </Row>
         </Col>

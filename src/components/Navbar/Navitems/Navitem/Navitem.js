@@ -12,13 +12,14 @@ const NavLinkStyle = styled(NavLink)`
   align-items: center;
   border-bottom: 1px solid transparent;
   font-size: 1.2rem;
-  padding: 0rem 1rem;
+  padding: 0rem 2rem;
   margin: 0 1rem;
   font-weight: 400;
   color: var(--color-whiteColor);
   transition: all 0.2s;
   &:hover {
-    border-bottom: 2px solid var(--color-whiteColor);
+    color: var(--color-yellow);
+    border-bottom: 3px solid var(--color-yellow);
   }
 `;
 

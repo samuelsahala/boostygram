@@ -8,10 +8,12 @@ const LogoWrapper = styled.div`
   font-size: 2rem;
   padding: 1rem;
   margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: "Tomorrow", sans-serif;
 `;
 
 const Logo = () => {
-  return <LogoWrapper>Boostygram</LogoWrapper>;
+  return <LogoWrapper>BOOSTYGRAM</LogoWrapper>;
 };
 
 export default Logo;
