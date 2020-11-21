@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Grid, Header, Card } from "semantic-ui-react";
+import NewOrder from "./NewOrder/NewOrder";
+
 const Orders = () => {
   return (
     <>
@@ -7,11 +9,6 @@ const Orders = () => {
         <Grid.Row>
           <Grid.Column>
             <Header as="h2">Orders List</Header>
-          </Grid.Column>
-          <Grid.Column>
-            <Button color="green" floated="right">
-              New Order
-            </Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -59,6 +56,9 @@ const Orders = () => {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>table</Grid.Row>
+        <Grid.Row>
+          <NewOrder />
+        </Grid.Row>
       </Grid>
     </>
   );

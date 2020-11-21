@@ -6,7 +6,6 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 
 const UploadSVGWrapper = styled.div`
   height: 40rem;
-  width: 50rem;
   margin: auto;
   right: 100px;
   z-index: -100;

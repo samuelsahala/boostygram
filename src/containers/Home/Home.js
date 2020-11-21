@@ -55,7 +55,7 @@ const Home = () => {
             </Heading>
           </Row>
           <Row around="xs" middle="xs">
-            <Col xs={2}>
+            <Col xs>
               <Row center="xs">
                 <LoginSVGWrapper />
                 <Heading size="h3">
@@ -64,7 +64,7 @@ const Home = () => {
                 </Heading>
               </Row>
             </Col>
-            <Col xs={2}>
+            <Col xs>
               <Row center="xs">
                 <SelectionSVGWrapper />
                 <Heading size="h3">
@@ -73,7 +73,7 @@ const Home = () => {
                 </Heading>
               </Row>
             </Col>
-            <Col xs={2}>
+            <Col xs>
               <Row center="xs">
                 <EnjoySVGWrapper />
                 <Heading size="h3">
@@ -92,7 +92,7 @@ const Home = () => {
             </Heading>
           </Row>
           <Row around="xs">
-            <Col xs={3}>
+            <Col xs>
               <Row>
                 <Heading size="h2">{CheckSquare} Real Followers</Heading>
                 <Heading size="h3" noMargin>
@@ -101,7 +101,7 @@ const Home = () => {
                 </Heading>
               </Row>
             </Col>
-            <Col xs={3}>
+            <Col xs>
               <Row>
                 <Heading size="h2">{CheckSquare} Safe & Secure</Heading>
                 <Heading size="h3" noMargin>
@@ -110,7 +110,7 @@ const Home = () => {
                 </Heading>
               </Row>
             </Col>
-            <Col xs={3}>
+            <Col xs>
               <Row>
                 <Heading size="h2">
                   {CheckSquare} Real Instagram Marketers
@@ -123,7 +123,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row around="xs">
-            <Col xs={3}>
+            <Col xs>
               <Row>
                 <Heading size="h2">{CheckSquare} Advanced Optimization</Heading>
                 <Heading size="h3" noMargin>
@@ -132,7 +132,7 @@ const Home = () => {
                 </Heading>
               </Row>
             </Col>
-            <Col xs={3}>
+            <Col xs>
               <Row>
                 <Heading size="h2">{CheckSquare} Analytics & Reports</Heading>
                 <Heading size="h3" noMargin>
@@ -141,7 +141,7 @@ const Home = () => {
                 </Heading>
               </Row>
             </Col>
-            <Col xs={3}>
+            <Col xs>
               <Row>
                 <Heading size="h2">{CheckSquare} Handmade Growth</Heading>
                 <Heading size="h3" noMargin>
